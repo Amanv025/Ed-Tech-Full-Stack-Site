@@ -1,5 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
-import { firestore } from "/Edtech/edtech-project/firebaseconfig.js";
+import { firestore } from "./firebaseconfig.js";
 
 // Fetch course descriptions
 export const fetchCourseDescriptions = async () => {
