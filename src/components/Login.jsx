@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { auth } from '/Edtech/edtech-project/firebaseconfig.js';  // Adjust the path according to your project structure
+import { auth } from '../../firebaseconfig.js';  // Adjust the path according to your project structure
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = ({ onClose }) => {
