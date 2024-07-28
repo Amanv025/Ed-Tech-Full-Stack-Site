@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {auth,firestore} from '/Edtech/edtech-project/firebaseconfig.js' // Ensure this path is correct
+import {auth,firestore} from '../../firebaseconfig.js' // Ensure this path is correct
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
