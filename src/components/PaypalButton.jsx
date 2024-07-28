@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { PayPalButtons } from '@paypal/react-paypal-js';
-import { auth } from '/Edtech/edtech-project/firebaseconfig.js'; // Adjust the path according to your project structure
+import { auth } from '../../firebaseconfig.js'; // Adjust the path according to your project structure
 import { getFirestore, doc, updateDoc, arrayUnion } from 'firebase/firestore';
 
 const PayPalButton = () => {
