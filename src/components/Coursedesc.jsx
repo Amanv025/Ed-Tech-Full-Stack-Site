@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { fetchCourseDescriptions } from '/Edtech/edtech-project/fetchdata.js';
+import { fetchCourseDescriptions } from '../../fetchdata';
 import { useState, useEffect } from 'react';
 import Footer from './Footer';
 import PayPalButton from './PaypalButton';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-import { auth } from "/Edtech/edtech-project/firebaseconfig.js"; // Import Firebase auth
+import { auth } from "../../firebaseconfig"; // Import Firebase auth
 import { onAuthStateChanged } from "firebase/auth";
 
 const CourseDescription = () => {
