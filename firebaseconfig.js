@@ -1,24 +1,22 @@
-// firebaseconfig.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth,GoogleAuthProvider } from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAAvTs0avcIwVs9C2WgsD-XGhvyeL9RFUk",
-  authDomain: "edtech-project-9a72a.firebaseapp.com",
-  projectId: "edtech-project-9a72a",
-  storageBucket: "edtech-project-9a72a.appspot.com",
-  messagingSenderId: "656992686711",
-  appId: "1:656992686711:web:c359b0d1dfad4880392c72",
-  measurementId: "G-WCYEGQ7L5W"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 
-export { auth, firestore, analytics,googleProvider };
+export { auth, firestore, analytics, googleProvider };
